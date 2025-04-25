@@ -1,0 +1,94 @@
+.dress-code {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.dress-code__title {
+    margin-bottom: 80px;
+}
+
+.dress-code__content {
+    margin-bottom: 70px;
+}
+
+/*.colors__title {
+    margin-bottom: 50px;
+}
+
+.dress-code-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.dress-code-list__item {
+    width: 100px;
+    height: 100px;
+}
+
+.dress-code-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.dress-code-list__item:first-child {
+    background-color: @bege;
+}
+
+.dress-code-list__item:nth-child(2) {
+    background-color: @dark-grey;
+}
+
+.dress-code-list__item:nth-child(3) {
+    background-color: @blue;
+}
+
+.dress-code-list__item:nth-child(4) {
+    background-color: @green;
+}
+
+.dress-code-list__item:nth-child(5) {
+    background-color: @brown;
+}*/
+
+.gallery__title {
+    margin-bottom: 50px;
+}
+
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.gallery__img {
+    width: 200px;
+    height: 270px;
+}
+
+@media (max-width: @mobile-width) {
+    .gallery-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    }
+
+    .dress-code-list__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .gallery-list__item {
+        margin-bottom: 20px;
+    }
+
+    .gallery__img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .gallery__title {
+        letter-spacing: 0;
+        line-height: 40px;
+    }
+}

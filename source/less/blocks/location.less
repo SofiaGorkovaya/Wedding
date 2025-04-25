@@ -1,0 +1,143 @@
+.location {
+    background-color: @brown;
+    text-align: center;
+    padding: 80px 0 150px;
+    margin-bottom: 150px;
+}
+
+.location__wrapper {
+    margin: 0 auto;
+}
+
+.location__title {
+    color: @light-bege;
+}
+
+.location__title p {
+    margin-top: 80px;
+    line-height: 40px;
+}
+
+.location__photo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-center {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.discription {
+    padding: 50px 37px 40px;
+    background-color: @light-bege;
+    color: @brown;
+    z-index: 2;
+}
+
+.main-photo__content p:first-child {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.img {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.img-left {
+    right: -80px;
+}
+
+.img-right {
+    left: -80px;
+}
+
+.location__button {
+    text-align: center;
+    margin-top: 90px;  
+    
+}
+
+.location__link {
+    padding: 24px 34px;
+    color: @light-bege;
+    background-color: @dark-brown;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.location__link:hover {
+    background-color: @light-bege;
+    color: @dark-brown;
+}
+
+@media (max-width: @mobile-width) {
+    .location {
+        padding: 40px 0 80px;
+        margin-bottom: 80px;
+    }    
+
+    .location__wrapper {
+        gap: 30px;
+    }
+
+    .location__title {
+        font-size: 32px;
+        letter-spacing: 0.2rem;
+    }
+
+    .location__title p {
+        margin-top: 30px;
+        line-height: 30px;
+        font-size: 28px;
+    }
+
+    .discription {
+        padding: 30px 20px;
+    }
+  
+    .main-photo__content p:first-child {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+      
+    .discription__title {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+  
+    .location__button {
+        margin-top: 50px;
+    }
+  
+    .location__link {
+        font-size: 18px;
+        padding: 16px 24px;
+    }
+
+    .location__photo-wrapper {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .img-center {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-left,
+    .img-right {
+        display: none;
+    }
+
+    .location__photo-wrapper {
+        margin: 0 40px;
+    }
+}

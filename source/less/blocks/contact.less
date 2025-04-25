@@ -1,0 +1,45 @@
+.contact {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.contact__title p {
+    margin-left: 110px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.contact__numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact__link {
+    color: @black;
+    font-size: 20px;
+    color: @green;
+}
+
+.contact__link:hover {
+    color: @dark-green;
+}
+
+.contact__title .content-design {
+    color: @green;
+}
+
+@media (max-width: @mobile-width) {
+    .contact__title p {
+        margin-left: 0;
+    }
+
+    .contact__numbers {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact {
+        margin-bottom: 80px;
+    }
+}

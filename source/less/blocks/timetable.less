@@ -1,0 +1,123 @@
+.timetable {
+    text-align: center;
+}
+
+.timetable__title .content-design {
+    position: relative;
+    padding-left: 280px;
+    top: -10px;
+    color: @green;
+}
+
+.timetable-list {
+    margin: 100px 300px 100px 500px;
+}
+
+.timetable-list__item {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.timetable-list__wrapper {
+    margin-left: 150px;
+}
+
+.timetable-list__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.timetable-list__title.content-design {
+    margin: 20px 0 40px 0;
+
+}
+
+.timetable-list__title.content {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.timetable-list__list {
+    position: relative;
+    padding-left: 20px;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 150px;
+      width: 2px;
+      height: 100%;
+      background-color: @green;
+    }
+  }
+
+@media (max-width: 1023px) {
+    .timetable__title {
+        letter-spacing: 0.2rem;
+    }
+
+    .timetable__title .content-design {
+        padding-left: 0;
+        top: 0;
+    }
+
+
+    .timetable-list__content {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .timetable-list {
+        margin: 60px auto;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .timetable-list__item {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .timetable-list__wrapper {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .timetable-list__content {
+        align-items: center;
+    }
+
+    .timetable__title .content-design {
+        margin: 15px 0 10px;
+    }
+
+    .timetable-list__content {
+        font-size: 18px;
+    }
+
+    .timetable-list__list {
+        padding: 0;
+    }
+
+    .timetable-list__list::before {
+        display: none;
+     }
+
+    .timetable-list__item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 10%;  /* немного отступаем от краёв */
+        width: 80%; /* длина линии */
+        height: 2px;
+        background-color: @green;
+    }
+      
+}

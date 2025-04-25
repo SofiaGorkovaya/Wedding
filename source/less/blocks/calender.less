@@ -1,0 +1,86 @@
+.calendar {
+    border: thick double @black;
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+}
+
+/*.calendar__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar__table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.calendar-cell {
+    width: 50px;
+    margin: 0 22px 45px;
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+}*/
+
+.calendar__table {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); // 7 дней в строке
+    gap: 20px 10px; // вертикальный и горизонтальный отступы
+
+  }
+  
+  .calendar-cell {
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+
+.calendar-cell--active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/flower.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    top: -25px;
+    left: 10px;
+    z-index: -1;
+    transform: rotate(30deg);
+    opacity: 0.7;
+}
+
+@media (max-width: @mobile-width) {
+    .calendar {
+        width: 100%;
+    }
+
+    .calendar__table {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 20px 10px;
+        justify-items: center;
+    }
+
+    .calendar-cell {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+    .calendar-cell--active:after {
+        width: 60px;
+        height: 60px;
+        top: -15px;
+        left: -10px;
+        background-size: contain;
+    }
+}
